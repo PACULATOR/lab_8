@@ -5,4 +5,4 @@ RUN apt update && \
     apt install -yy gcc g++ cmake
 COPY . /home/workdir/
 WORKDIR /home/workdir/
-ENTRYPOINT
+ENTRYPOINT g++ -Wall -o out main.cpp
